@@ -19,6 +19,7 @@ Entity Framework data access is separated into:
 To facilitate testing, each repository class has matching interface: services are initialized with repository interfaces to access data.
 That way, testing framework can inject its own repository to use for unit tests.
 
+	- [Matthew Jones: The Repository-Service Pattern with DI and ASP.NET 5.0][1]
 
 ## Entity Framework 
 
@@ -26,6 +27,8 @@ Using code-first approach: C# classes are created first, and then used to create
 This is done using migrations (see readme.md in MusicLibDbCtx project for details)
 Migration are applied (database is created) during application startup, in Program.cs 
 MusicLibDbCtx project holds C# data-classes and is used for EF migrations.
+
+	- [MSDN: Migrations Overview][3]
 
 
 ## Docker implementation for standalone Sql Server database 
@@ -46,6 +49,7 @@ docker container ls -a
 - update connection string in appsettings.json as:
 Server=192.168.0.123,21143;Database=MusicLib;User ID=sa;Password=Pass@Word1;TrustServerCertificate=true;
 
+	- [Sam Walpole: A guide to runing ASP.NET Core and SQL Server from Docker][2]
 
 ## Storing secrets 
 
@@ -76,3 +80,7 @@ Server=192.168.0.123,21143;Database=MusicLib;User ID=sa;Password=Pass@Word1;Trus
 ## Kubernetes
 
 https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app
+
+[1]: https://exceptionnotfound.net/the-repository-service-pattern-with-dependency-injection-and-asp-net-core/
+[2]: https://hackernoon.com/a-guide-to-running-aspnet-core-and-sql-server-from-docker-wu4034xc
+[3]: https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
