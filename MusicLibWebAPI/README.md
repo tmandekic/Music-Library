@@ -18,8 +18,8 @@ Entity Framework data access is separated into:
     - service layer that provides business logic functionality
 To facilitate testing, each repository class has matching interface: services are initialized with repository interfaces to access data.
 That way, testing framework can inject its own repository to use for unit tests.
+[Matthew Jones: The Repository-Service Pattern with DI and ASP.NET 5.0][1]
 
-	- [Matthew Jones: The Repository-Service Pattern with DI and ASP.NET 5.0][1]
 
 ## Entity Framework 
 
