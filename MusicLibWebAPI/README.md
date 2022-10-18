@@ -1,4 +1,4 @@
-# MusicLibWebAPI sample service
+# MusicLibWebAPI service
 
 Using ASP.NET core 6, service-repository pattern, Entity Framework code-to-database generation and a standalone SQL Server (running in a separate container). 
 API itself is runnning inside a container. 
