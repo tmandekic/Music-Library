@@ -1,12 +1,12 @@
 # MusicLibWebAPI service
 
 Using ASP.NET core 6, service-repository pattern, Entity Framework code-to-database generation and a standalone SQL Server (running in a separate container). 
-API itself is runnning inside a container. 
+API itself is running inside a container. 
 
 
 ## How to run
 
-1. Confirm that Sql Server Docker container is running and confirm its IP (run ipconfig in cmd)
+1. Confirm that Sql Server Docker container is running and confirm its IP (run `ipconfig` in cmd)
 2. If needed, update connection string in secrets manager (right click on the project in a solution -> Manage User Secrets)
 3. Run the solution
 
